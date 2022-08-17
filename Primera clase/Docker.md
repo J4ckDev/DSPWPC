@@ -2,7 +2,7 @@
 
 1. Con la máquina virtual encendida, abra un terminal dando clic en el ícono de la barra de navegación o haciendo la combinacion de teclas `Ctrl + Alt + Letra t`.
 
-    <div style="display:flex; justify-content:center; align-items:center;">
+    <div align="center">
     <img src="./img/docker/IconoTerminal.png"/>
     </div>
 
@@ -15,13 +15,13 @@
 
     Sí todo queda bien, cuando ejecute el último comando de la lista verá lo siguiente:
 
-    <div style="display:flex; justify-content:center; align-items:center;">
+    <div align="center">
     <img src="./img/docker/HabilitarDocker.png"/>
     </div>
 
     También puede ejecutar el comando `docker` para comprobar que ya está corriendo el servicio.
 
-    <div style="display:flex; justify-content:center; align-items:center;">
+    <div align="center">
     <img src="./img/docker/docker.png"/>
     </div>
 
