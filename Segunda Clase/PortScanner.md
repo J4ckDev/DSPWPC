@@ -10,11 +10,11 @@ import sys
 # Pedir parámetros por línea de comandos
 try:
 	ip_server = sys.argv[1] # Direccion IP del servidor al cuál desea escanear los puertos
-    nombre_archivo = sys.argv[2] # Nombre del archivo donde se guardarán los puertos que tiene abiertos el servidor
+	nombre_archivo = sys.argv[2] # Nombre del archivo donde se guardarán los puertos que tiene abiertos el servidor
 except:
 	print("python3 port_scanner.py <ip-victima> <nombre-archivo>")
-    print("\n<ip-victima> Direccion IP del servidor al cuál desea escanear los puertos")
-    print("<nombre-archivo> Nombre del archivo donde se guardarán los puertos que tiene abiertos el servidor")
+	print("\n<ip-victima> Direccion IP del servidor al cuál desea escanear los puertos")
+	print("<nombre-archivo> Nombre del archivo donde se guardarán los puertos que tiene abiertos el servidor")
 	sys.exit()
 
 # Abre un archivo para agregar informacion, sino existe lo crea
