@@ -4,10 +4,12 @@ El curso de pentesting web consiste en enseñar como realizar ataques a diferent
 **:warning: AVISO: Este repositorio tiene la finalidad de compartir mis notas de clase y códigos desarrollados durante el curso para que cualquier persona aprenda a probar la seguridad de sus sistemas o aplicaciones desarrolladas. No me hago responsable del mal uso que se realice al contenido de este repositorio, siendo exclusiva responsabilidad de la persona que accede a él y lo utiliza.**
 
 ## Tabla de Contenido
-- [Primera Clase](#primera-clase)
+- [:computer: DeepSec Pentesting Web Python Course](#computer-deepsec-pentesting-web-python-course)
+  - [Tabla de Contenido](#tabla-de-contenido)
+  - [Primera Clase](#primera-clase)
     - [Configuración del laboratorio](#configuración-del-laboratorio)
     - [Lenguaje Python](#lenguaje-python)
-- [Segunda Clase](#segunda-clase)
+  - [Segunda clase](#segunda-clase)
     - [Lista de comandos Linux](#lista-de-comandos-linux)
     - [Conexiones con sockets en Python](#conexiones-con-sockets-en-python)
 
@@ -20,9 +22,9 @@ Para el curso es necesario un laboratorio que disponga de las herramientas neces
 
 2. Descargar y/o configurar una máquina virtual de [Kali Linux](https://www.kali.org/get-kali/#kali-virtual-machines) o [Parrot OS](https://www.parrotsec.org/download/). En mi caso usé Kali Linux V2022.3.
 
-3. Instalar [Docker](https://docs.docker.com/get-started/) en el sistema operativo elegido. En caso de elegir Kali, [**aquí**](./Primera%20clase/Docker.md) puedes ver los pasos que usé para instalarlo.
+3. Instalar [Docker](https://docs.docker.com/get-started/) en el sistema operativo elegido. En caso de elegir Kali, [**aquí**](./Clase%201/Docker.md) puedes ver los pasos que usé para instalarlo.
 
-4. Por último, instalar Metasploitable2. Esto es un servidor que cuenta con diversas vulnerabilidades para poder realizar diferentes ataques. Se puede instalar como máquina virtual o como contenedor Docker. En caso de elegir el contenedor, [**aquí**](./Primera%20clase/Metasploitable.md) puedes ver los pasos que seguí para instalarlo en Kali Linux con Docker.
+4. Por último, instalar Metasploitable2. Esto es un servidor que cuenta con diversas vulnerabilidades para poder realizar diferentes ataques. Se puede instalar como máquina virtual o como contenedor Docker. En caso de elegir el contenedor, [**aquí**](./Clase%201/Metasploitable.md) puedes ver los pasos que seguí para instalarlo en Kali Linux con Docker.
 
 ### Lenguaje Python
 Gracias a la versatilidad, la cantidad de librerías y simplicidad de Python es muy sencillo crear herramientas, exploits, etc.
@@ -59,7 +61,7 @@ Existen otros comandos pero estos serán los más usados durante el curso, si de
 ### Conexiones con sockets en Python
 Para esta sección se recomienda tener un conocimiento básico sobre el [modelo cliente - servidor](https://blog.infranetworking.com/modelo-cliente-servidor/), los [protocolos TCP - UDP](https://ccnadesdecero.es/capa-transporte-definicion-y-funciones/) para las conexiones de red y tener claro qué es un [socket](https://www.redeszone.net/tutoriales/configuracion-puertos/que-es-socket-tcp-udp-diferencias-puertos/).
 
-Con los términos claros, en la primera parte de esta sección se realizaron dos códigos que nos permitieron crear un pequeño [servidor](./Segunda%20Clase/Server.md) y un [cliente](./Segunda%20Clase/Clients.md#cliente-con-librería-socket) para probar conexiones entre sí. En la segunda parte se encendió el contenedor de Metasploitable2, en mi caso con los comandos `docker start container-name` y `docker exec -it container-name sh -c "/bin/services.sh && bash"`, y se ejecutó un [escáner de puertos](./Segunda%20Clase/PortScanner.md) desarrollado en clase para detectar sus puertos abiertos. En la última parte se usa la librería [PWN Tools](https://github.com/Gallopsled/pwntools#readme) para hacer un [cliente](./Segunda%20Clase/Clients.md#cliente-con-librería-pwn) que nos permitiera conectarnos a un socket de una forma más sencilla.
+Con los términos claros, en la primera parte de esta sección se realizaron dos códigos que nos permitieron crear un pequeño [servidor](./Clase%202/Server.md) y un [cliente](./Clase%202/Clients.md#cliente-con-librería-socket) para probar conexiones entre sí. En la segunda parte se encendió el contenedor de Metasploitable2, en mi caso con los comandos `docker start container-name` y `docker exec -it container-name sh -c "/bin/services.sh && bash"`, y se ejecutó un [escáner de puertos](./Clase%202/PortScanner.md) desarrollado en clase para detectar sus puertos abiertos. En la última parte se usa la librería [PWN Tools](https://github.com/Gallopsled/pwntools#readme) para hacer un [cliente](./Clase%202/Clients.md#cliente-con-librería-pwn) que nos permitiera conectarnos a un socket de una forma más sencilla.
 
 ___
 
