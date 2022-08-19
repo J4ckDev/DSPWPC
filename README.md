@@ -1,19 +1,17 @@
-# :computer: DeepSec Pentesting Web Python Course
+# :computer: DeepSec Pentesting Web Python Course <!-- omit in toc -->
 El curso de pentesting web consiste en enseñar como realizar ataques a diferentes entornos o sistemas donde se desee detectar y prevenir posibles fallos de seguridad. 
 
 **:warning: AVISO: Este repositorio tiene la finalidad de compartir mis notas de clase y códigos desarrollados durante el curso para que cualquier persona aprenda a probar la seguridad de sus sistemas o aplicaciones desarrolladas. No me hago responsable del mal uso que se realice al contenido de este repositorio, siendo exclusiva responsabilidad de la persona que accede a él y lo utiliza.**
 
-## Tabla de Contenido
-- [:computer: DeepSec Pentesting Web Python Course](#computer-deepsec-pentesting-web-python-course)
-  - [Tabla de Contenido](#tabla-de-contenido)
-  - [Primera Clase](#primera-clase)
-    - [Configuración del laboratorio](#configuración-del-laboratorio)
-    - [Lenguaje Python](#lenguaje-python)
-  - [Segunda clase](#segunda-clase)
-    - [Lista de comandos Linux](#lista-de-comandos-linux)
-    - [Conexiones con sockets en Python](#conexiones-con-sockets-en-python)
+## Tabla de Contenido <!-- omit in toc -->
+- [Clase 1 - Introducción al curso](#clase-1---introducción-al-curso)
+  - [Configuración del laboratorio](#configuración-del-laboratorio)
+  - [Lenguaje Python](#lenguaje-python)
+- [Clase 2 - Comandos Linux y Sockets](#clase-2---comandos-linux-y-sockets)
+  - [Lista de comandos Linux](#lista-de-comandos-linux)
+  - [Conexiones con sockets en Python](#conexiones-con-sockets-en-python)
 
-## Primera Clase
+## Clase 1 - Introducción al curso
 Aquí se hizo la introducción al curso donde se explicó como configurar el laboratorio de trabajo y un repaso sobre el lenguaje de programación Python.
 ### Configuración del laboratorio
 Para el curso es necesario un laboratorio que disponga de las herramientas necesarias para aplicar lo aprendido. Para esto es necesario realizar lo siguiente:
@@ -37,7 +35,7 @@ ___
 
 [:arrow_up_small: Regresar a la Tabla de Contenido](#tabla-de-contenido)
 
-## Segunda clase
+## Clase 2 - Comandos Linux y Sockets
 Se hizo una introducción a los comandos linux que usaremos en el curso y como realizar conexiones con sockets en Python.
 
 ### Lista de comandos Linux
