@@ -10,6 +10,7 @@ El curso de pentesting web consiste en enseñar como realizar ataques a diferent
 - [Clase 2 - Comandos Linux y Sockets](#clase-2---comandos-linux-y-sockets)
   - [Lista de comandos Linux](#lista-de-comandos-linux)
   - [Conexiones con sockets en Python](#conexiones-con-sockets-en-python)
+- [Clase 3 - La herramienta Nmap](#clase-3---la-herramienta-nmap)
 
 ## Clase 1 - Introducción al curso
 Aquí se hizo la introducción al curso donde se explicó como configurar el laboratorio de trabajo y un repaso sobre el lenguaje de programación Python.
@@ -61,6 +62,14 @@ Para esta sección se recomienda tener un conocimiento básico sobre el [modelo 
 
 Con los términos claros, en la primera parte de esta sección se realizaron dos códigos que nos permitieron crear un pequeño [servidor](./Clase%202/Server.md) y un [cliente](./Clase%202/Clients.md#cliente-con-librería-socket) para probar conexiones entre sí. En la segunda parte se encendió el contenedor de Metasploitable2, en mi caso con los comandos `docker start container-name` y `docker exec -it container-name sh -c "/bin/services.sh && bash"`, y se ejecutó un [escáner de puertos](./Clase%202/PortScanner.md) desarrollado en clase para detectar sus puertos abiertos. En la última parte se usa la librería [PWN Tools](https://github.com/Gallopsled/pwntools#readme) para hacer un [cliente](./Clase%202/Clients.md#cliente-con-librería-pwn) que nos permitiera conectarnos a un socket de una forma más sencilla.
 
+___
+
+[:arrow_up_small: Regresar a la Tabla de Contenido](#tabla-de-contenido)
+
+## Clase 3 - La herramienta Nmap
+[Nmap](https://nmap.org/book/man.html#man-description) es una herramienta de código abierto que nos permite escanear una red con el objetivo de explorarla para realizar auditorías de seguridad. En esta clase se explicaron las nociones básicas de la herramienta y como utilizarla en Python para realizar diversos [tipos de escaneo](./Clase%203/ScanningTypes.md) que nos permita encontrar puertos abiertos en una red objetivo.
+
+La práctica realizada en la clase consistió en ejecutar Metasploitable2 y realizar un script que se conectara a su dirección IP para obtener la lista de puertos abiertos, [aquí](./Clase%203/FindingOpenPorts.md) puede encontrar el desarrollo de la pŕactica.
 ___
 
 [:arrow_up_small: Regresar a la Tabla de Contenido](#tabla-de-contenido)
