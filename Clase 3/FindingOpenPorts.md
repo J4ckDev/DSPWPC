@@ -13,6 +13,7 @@ A fin de practicar los [tipos de escaneo](./ScanningTypes.md) con Nmap, se hará
     nmap_port_scanner = nmap.PortScanner() # Instanciar el escaner de puertos
 
     ip_to_scan = '172.17.0.2' # IP del sistema objetivo, en este caso será metasploitable2
+    #ip_to_scan = '172.17.0.0/16' # Escanear todos los host la red, pero esto es un método muy demorado. En este caso de metasploitable2
 
     ports_to_scan = '1-65535' # Se escanean los puertos desde el 1 hasta 65535.
     #ports_to_scan = '10, 20, 30, 44, 25' # Especificar un grupo de puertos a escanear.

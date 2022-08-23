@@ -5,7 +5,8 @@ from pprint import PrettyPrinter
 
 nmap_port_scanner = nmap.PortScanner()
 
-ip_to_scan = '172.17.0.2'
+#ip_to_scan = '172.17.0.2'
+ip_to_scan = '172.17.0.0/16'
 
 #ports_to_scan = '1-65535'
 #ports_to_scan = '10, 20, 30, 44, 25'
